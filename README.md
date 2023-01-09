@@ -33,7 +33,7 @@ I use combos very heavily for punctuation and shortcuts. I have enter on the bot
 
 [APTv3 Keyboard Layout](https://github.com/Apsu/APT) - My current alpha layout
 
-[Figma layout design source](https://github.com/bredfield/zmk-config) - all the pretty design templating in my layout is lifted *directly* from the Layout.fig in this repo. Feel free to do the same with this one!
+[Figma layout design source](https://github.com/bredfield/zmk-config) - all the pretty design templating in my layout is lifted *directly* from the Layout.fig in this repo. Feel free to do the same with mine!
 
 ### Code Influences (alphabetically and non-comprehensively)
 - Callum's [QMK userspace](https://github.com/qmk/qmk_firmware/tree/master/users/callum) - Oneshots, swappers
