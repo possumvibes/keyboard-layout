@@ -1,6 +1,7 @@
 # the possumvibes keymap
 
 ![Current layout visualization](./assets/possum_layers_only.svg)
+Visualizations made with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 
 
 ## The possumvibes layout: an overview
