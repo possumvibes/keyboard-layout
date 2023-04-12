@@ -1,0 +1,39 @@
+# Possumvibes 34-ish key layout
+layout: {qmk_keyboard: ferris/sweep, qmk_layout: LAYOUT_split_3x5_2}
+layers:
+  Base:
+  - [W, G, D, F, B,  Q, L, U, O, Y]
+  - [R, S, T, H, K,  J, N, E, A, I]
+  - [X, C, M, P, V,  '', "'", ",", ., '' ]
+  - [Nav, Shift,     Sym, Space]
+  Nav:
+  - ['', Back, Gui, Fwd, GCtl,  GCtl, Home, Up,   End,   '']
+  - ['', Alt, Ctl, Shift, '',   F5,   Left, Down, Right, Clear]
+  - ['', '',  F12, 2xCtl, '',   LGui, LSft, LCtl, LAlt,  '']
+  - [Nav, Shift, Sym, Space]
+  Num:
+  - [W, 7,8,9,'%',  '=', '+', '', PANIC, '']
+  - [V, 4,5,6,$,  G,j,k,':','']
+  - [X, 1,2,3,'', '','','','','',]
+  - [Nav, 0,      Sym, Space]
+  Sym:
+  - ['', v1, v2, v3, '',  '', '',   Gui,  '', '']
+  - ['','','','','',      '', Sft,  Ctl,  Alt, '']
+  - ['','','','','',      '', ');', '=>', 'get; set;', '']
+  - [Nav, Shift, Sym, Space]
+  Macro:
+  - ['', v1, v2, v3, '',  '', yiw, w, yaw, '']
+  - ['','','','','',      '', iw, "[]()", aw, '']
+  - ['','','','','',      "", Code Block, '<>', '', '']
+  - [Nav, Shift, Shift, Space]
+  Func:
+  - [Alt, Wksp 9, Last Wksp, Last Node, Wksp 0,  F5, F6, F7, F8, Gui]
+  - [Ctl, Wksp 1, Wksp 2, Wksp 3, Wksp 4,        F9, F11, F10, F6, Ctl]
+  - ['',  Wksp 5, Wksp 6, Wksp 7, Wksp 8,        F1, F2, F3, F4, '']
+  - [Nav, Shift, Sym, Space]
+  System:
+  - ['','','','','',                 QK Boot, qmk, Kill, '', '']
+  - [QWERTY, ALT1, ALT2, APTv3, '',  IsWin, qmk com- pile, com- ment, ZQ, '' ]
+  - ['','','','','',                 '', qmk flash, uncom- ment, ZZ, '']
+  - [Nav, Shift, Sym, Space]
+
