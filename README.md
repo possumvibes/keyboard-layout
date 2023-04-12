@@ -1,6 +1,6 @@
 # the possumvibes keymap
 
-![Current layout visualization](./assets/possum_34key.png)
+![Current layout visualization](./assets/possum_layers_only.svg)
 
 
 ## The possumvibes layout: an overview
