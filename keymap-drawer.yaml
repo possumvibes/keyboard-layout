@@ -32,7 +32,7 @@ layers:
   - ['',  Wksp 5, Wksp 6, Wksp 7, Wksp 8,        F1, F2, F3, F4, '']
   - [Nav, Shift, Sym, Space]
   System:
-  - ['','','','','',                 QK Boot, qmk, Kill, '', '']
+  - ['','','','','',                 Boot, qmk, Kill, '', '']
   - [QWERTY, ALT1, ALT2, APTv3, '',  IsWin, qmk com- pile, com- ment, ZQ, '' ]
   - ['','','','','',                 '', qmk flash, uncom- ment, ZZ, '']
   - [Nav, Shift, Sym, Space]
