@@ -113,9 +113,6 @@ combos:
   - p: [26, 27, 28]
     k: Capswd
     l: [Base]
-  - p: [26, 28]
-    k: '_'
-    l: [Base]
   - p: [26, 27]
     k: '-'
     l: [Base]
@@ -185,60 +182,60 @@ combos:
   - p: [7, 16]
     k: ']'
     l: [Base]
-  - p: [KC_P, 18]
+  - p: [9, 18]
     k: Del
     l: [Base]
 
   # *---- HOME-BOTTOM ADJACENT DIAGONALS ----*/
   - p: [11, 23]
-    k: KC_CAPS
+    k: Caps
     l: [Base]
   - p: [12, 23]
-    k: KC_LPRN
+    k: '('
     l: [Base]
   - p: [13, 24]
-    k: KC_WH_D
+    k: WhDn
     l: [Base]
 
-  - p: [16, KC_N]
-    k: KC_PGDN
+  - p: [16, 25]
+    k: PgDn
     l: [Base]
   - p: [17, 26]
-    k: KC_RPRN
+    k: ')'
     l: [Base]
   - p: [18, 26]
-    k: DMENU
+    k: DMenu
     l: [Base]
-  - p: [28, KC_SCLN]
-    k: KC_DEL
+  - p: [28, 29]
+    k: Del
     l: [Base]
 
   # *---- THUMBS ----*/
   - p: [30, 31]
-    k: SYS_OSL
+    k: Sys
     l: [Base]
   - p: [33, 32]
-    k: MCRMODE
+    k: Macro
     l: [Base]
 
   # *---- DIAGONAL THUMBS ----*/
   - p: [31, 11]
-    k: SYMMODE
+    k: Sym
     l: [Base]
   - p: [31, 12]
-    k: MCRMODE
+    k: Macro
     l: [Base]
   - p: [31, 13]
-    k: FUNMODE
+    k: Func
     l: [Base]
 
   - p: [32, 16]
-    k: FUNMODE
+    k: Func
     l: [Base]
   - p: [32, 17]
-    k: NUM_OSL
+    k: Os Num
     l: [Base]
   - p: [32, 18]
-    k: NUMMODE
+    k: Num Mode
     l: [Base]
 
