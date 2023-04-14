@@ -144,7 +144,7 @@ path {
 <rect rx="6.0" ry="6.0" x="284.0" y="282.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="308.0" class="tap">Shift</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="282.0" width="52.0" height="52.0" class=""/>
-<text x="422.0" y="308.0" class="tap">Sym</text>
+<text x="422.0" y="308.0" class="tap">Macro</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="268.0" width="52.0" height="52.0" class=""/>
 <text x="478.0" y="294.0" class="tap">Space</text>
 <rect rx="6.0" ry="6.0" x="128.0" y="79.68" width="28.0" height="26.0" class="combo"/>
