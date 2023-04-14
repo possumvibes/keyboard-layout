@@ -2,8 +2,9 @@
 layout: {qmk_keyboard: ferris/sweep, qmk_layout: LAYOUT_split_3x5_2}
 layers:
   Base:
-  - [W, G, D, F, B,  Q, L, U, O, Y]
-  - [R, S, T, H, K,  J, N, E, A, I]
+  - [W, G, { t: D, h: Gui }, F, B,  Q, L, { t: U, h: Gui }, O, Y]
+  - [R, { t: S, h: Alt }, { t: T, h: Ctl }, { t: H, h: Sft }, K]
+  - [J, { t: N, h: Sft }, { t: E, h: Ctl }, { t: A, h: Alt }, I]
   - [X, C, M, P, V,  '', "'", ",", ., '' ]
   - [Nav, Shift, Sym, Space]
   Nav:
@@ -80,7 +81,6 @@ combos:
   - { p: [15, 16],   k: '^',   l: [Adjacent] }
   - { p: [16, 17],   k: ':',   l: [Adjacent] }
   - { p: [16, 18],   k: ';',   l: [Adjacent], a: bottom, o: -.1  }
-  - { p: [16, 18],   k: ';',  l: [Base], a: top, o: .2 } ## Duplicated for alpha display
 
   #/*---- BOTTOM ROW HORIZONTAL----*/
   - { p: [21, 22],   k: Q,    l: [Adjacent, Base] }
@@ -110,7 +110,7 @@ combos:
   - { p: [14, 24],   k: C-w,  l: [Vertical] }
 
   - { p: [16, 26],   k: '#',  l: [Vertical] }
-  - { p: [17, 27],   k: '/',  l: [Vertical, Base] }
+  - { p: [17, 27],   k: '/',  l: [Vertical] }
   - { p: [18, 28],   k: '\',  l: [Vertical] }
 
   ## DIAGONALS ALL GO TOGETHER.
