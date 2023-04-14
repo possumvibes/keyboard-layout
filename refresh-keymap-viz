@@ -5,7 +5,7 @@
 #
 #  
 
-keymap_yaml="keymap-drawer/possum_3x5_2.yaml"
+keymap_yaml="./keymap-drawer/possum_3x5_2.yaml"
 
 # Generate base-only svg
 keymap draw -s Base -- $keymap_yaml >assets/base_layer.svg
