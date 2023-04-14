@@ -16,6 +16,8 @@ Every layer and mod key pictured is a sticky/one-shot unless labeled otherwise :
 
 Layer accesses are highlighted in red on each layer. All but two total are combos, and most of those are same-hand thumb-finger combos. Most layers have multiple access points.
 
+The base alpha layout is [APTv3](https://github.com/Apsu/APT) with several keys removed because my hands don't like to bend that way. This first visualization is just my actual keymap layers, and so it's missing a lot of keys. Over 50 of them, in fact, all available on every layer! I have a separate combos-only visualization after this one. (I am also still figuring out the most sensible way to show all these layers and combos.)
+
 ![Current layout visualization](./assets/layers-only.svg)
 
 Visualizations made with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
@@ -28,6 +30,8 @@ A significant number of my convenience macros are designed to prevent having to 
 I use inverted-T tap-hold mods on base for shortcuts and navigation. These are the primary holds on the board, and I have alternate options.
 
 I use a dedicated one-shot thumb key shift so I never have to hold shift down.
+
+**Don't worry if the alpha layout isn't what you like!** I use APTv3 with a reduced amount of characters because of my hands' needs. This is a living document of the overall keymap that works for me, and the alpha layout that works for my hands may not be the right one for yours. My hope with this doc is to present ideas around RSI/hypermobility-friendly layout design that I haven't seen elsewhere and were the critical pieces that have kept me able to work at a keyboard.
 
 ## The Features
 
