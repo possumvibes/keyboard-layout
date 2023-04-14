@@ -154,7 +154,7 @@ path {
 <path d="M170.0,55.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v20.01333333333334"/>
 <rect rx="6.0" ry="6.0" x="156.0" y="42.0" width="28.0" height="26.0" class="combo"/>
 <text x="170.0" y="55.0" class="combo">Qu</text>
-<rect rx="6.0" ry="6.0" x="128.0" y="191.68" width="28.0" height="26.0" class="combo"/>
-<text x="142.0" y="204.68" class="combo">Q</text>
+<rect rx="6.0" ry="6.0" x="604.0" y="116.36000000000001" width="28.0" height="26.0" class="combo"/>
+<text x="618.0" y="129.36" class="combo">Q</text>
 </g>
 </svg>
