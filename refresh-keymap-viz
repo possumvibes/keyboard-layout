@@ -15,5 +15,5 @@ keymap draw -s Base Nav Num Sym Macro Func System -- $keymap_yaml >assets/layers
 
 # Regenerate the combos
 # Commented 4/13/23 --current keymap-drawer release is behind main and does not have slide formatting
-keymap draw -s Adjacent Vertical "Diagonal Mostly" Layers -- $keymap_yaml >assets/combos-only.svg
+# keymap draw -s Adjacent Vertical "Diagonal Mostly" Layers -- $keymap_yaml >assets/combos-only.svg
 echo images updated successfully.
