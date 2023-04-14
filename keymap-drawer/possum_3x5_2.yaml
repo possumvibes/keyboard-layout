@@ -18,15 +18,15 @@ layers:
   - [X, 1,2,3,'', '','','','','',]
   - [Nav, 0,      { t: Macro, type: held }, Space]
   Sym:
-  - ['', '', 'Gui', '', '',  '', '=', '|',  'Code Block', '']
+  - ['', '', 'Gui', '', '',  '', '=', '|',  '<>', '']
   - ['',{t: 'Alt', type: held}, 'Ctl', 'Sft', '']
   - ['', '+',  '&',  'md Link', '']
-  - ['','', Alt, '', '',     '', ');', '=>', 'get; set;', '']
+  - ['','', Alt, '', '',     '', '^', 'md Code', '', '']
   - [Nav, { t: Shift, type: held }, Shift, Space]
   Macro:
   - ['', v1, v2, v3, '',  '', w, yiw, yaw, '']
   - ['','',{ t: '', type: held },'','',      '', y, iw, aw, '']
-  - ['','','','','',      '', '', '', '', '']
+  - ['','','','','',      '', ');', '=>', 'get; set;', '']
   - [Nav, { t: Shift, type: held }, Shift, Space]
   Func:
   - [Alt, Wksp 9, Last Wksp, Last Node, Wksp 0,  F5, F6, F7, F8, Gui]
@@ -35,7 +35,7 @@ layers:
   - ['',  Wksp 5, Wksp 6, Wksp 7, Wksp 8,        F1, F2, F3, F4, '']
   - [Nav, { t: Shift, type: held }, { t: Macro, type: held }, Space]
   System:
-  - ['','','','','',                 Boot, qmk, Kill, '', '']
+  - ['','','','','',                 Boot, '', Kill, '', '']
   - [QWERTY, ALT1, ALT2, APTv3, '',  IsWin, qmk com- pile, com- ment, ZQ, '' ]
   - ['','','','','',                 '', qmk flash, uncom- ment, ZZ, '']
   - [{ t: Nav, type: held }, { t: Shift, type: held }, Macro, Space]
@@ -88,7 +88,7 @@ combos:
   - { p: [16, 18],   k: ';',   l: [Adjacent], a: bottom, o: -.1  }
 
   #/*---- BOTTOM ROW HORIZONTAL----*/
-  - { p: [21, 22],   k: '&',  l: [Adjacent] }
+  - { p: [21, 22],   k: 'Q',  l: [Adjacent, Base] }
   - { p: [22, 23],   k: '*',  l: [Adjacent] }
   - { p: [21, 23],   k: Ent,  l: [Adjacent], a: bottom, o: -.1 }
 
@@ -106,7 +106,7 @@ combos:
 
   - { p: [15, 5],   k: '<',   l: [Vertical] }
   - { p: [16, 6],   k: '$',   l: [Vertical] }
-  - { p: [18, 8],   k: 'Q',   l: [Vertical, Base] }
+  - { p: [18, 8],   k: '&',   l: [Vertical] }
 
   # * --- HOME-BOTTOM VERTICALS --- */
   - { p: [11, 21],   k: '`',  l: [Vertical] }

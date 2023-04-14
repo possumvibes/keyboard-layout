@@ -205,7 +205,7 @@ path {
 <rect rx="6.0" ry="6.0" x="492.0" y="445.08" width="28.0" height="26.0" class="combo"/>
 <text x="506.0" y="458.08" class="combo">$</text>
 <rect rx="6.0" ry="6.0" x="604.0" y="446.76" width="28.0" height="26.0" class="combo"/>
-<text x="618.0" y="459.76" class="combo">[]</text>
+<text x="618.0" y="459.76" class="combo">&amp;</text>
 <rect rx="6.0" ry="6.0" x="100.0" y="502.76" width="28.0" height="26.0" class="combo"/>
 <text x="114.0" y="515.76" class="combo">`</text>
 <rect rx="6.0" ry="6.0" x="156.0" y="485.4" width="28.0" height="26.0" class="combo"/>
@@ -380,15 +380,15 @@ path {
 <path d="M450.0,1345.0 h-22.0 a6.0,6.0 0 0 1 -6.0,-6.0 v1.266666666666577"/>
 <rect rx="6.0" ry="6.0" x="436.0" y="1332.0" width="28.0" height="26.0" class="combo"/>
 <text x="450.0" y="1345.0" class="combo">Macr</text>
-<path d="M118.89999999999999,1174.7259999999999 l176.29963747914218,135.4988642339693"/>
-<rect rx="6.0" ry="6.0" x="104.89999999999999" y="1161.7259999999999" width="28.0" height="26.0" class="combo"/>
-<text x="118.89999999999999" y="1174.7259999999999" class="combo">Sym</text>
-<path d="M173.5,1157.8 l124.54989120626303,149.4598694475156"/>
-<rect rx="6.0" ry="6.0" x="159.5" y="1144.8" width="28.0" height="26.0" class="combo"/>
-<text x="173.5" y="1157.8" class="combo">Macr</text>
-<path d="M228.1,1173.088 l72.88573375262257,132.16613053808888"/>
-<rect rx="6.0" ry="6.0" x="214.1" y="1160.088" width="28.0" height="26.0" class="combo"/>
-<text x="228.1" y="1173.088" class="combo">Func</text>
+<path d="M305.1,1317.8339999999998 l-176.29963747914218,-135.4988642339693"/>
+<rect rx="6.0" ry="6.0" x="291.1" y="1304.8339999999998" width="28.0" height="26.0" class="combo"/>
+<text x="305.1" y="1317.8339999999998" class="combo">Sym</text>
+<path d="M306.5,1317.3999999999999 l-124.54989120626303,-149.4598694475156"/>
+<rect rx="6.0" ry="6.0" x="292.5" y="1304.3999999999999" width="28.0" height="26.0" class="combo"/>
+<text x="306.5" y="1317.3999999999999" class="combo">Macr</text>
+<path d="M307.9,1317.792 l-72.88573375262256,-132.16613053808888"/>
+<rect rx="6.0" ry="6.0" x="293.9" y="1304.792" width="28.0" height="26.0" class="combo"/>
+<text x="307.9" y="1317.792" class="combo">Func</text>
 <path d="M503.9,1173.088 l-72.88573375262256,132.16613053808888"/>
 <rect rx="6.0" ry="6.0" x="489.9" y="1160.088" width="28.0" height="26.0" class="combo"/>
 <text x="503.9" y="1173.088" class="combo">Func</text>

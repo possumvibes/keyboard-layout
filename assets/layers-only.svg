@@ -154,8 +154,8 @@ path {
 <path d="M170.0,55.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v20.01333333333334"/>
 <rect rx="6.0" ry="6.0" x="156.0" y="42.0" width="28.0" height="26.0" class="combo"/>
 <text x="170.0" y="55.0" class="combo">Qu</text>
-<rect rx="6.0" ry="6.0" x="604.0" y="116.36000000000001" width="28.0" height="26.0" class="combo"/>
-<text x="618.0" y="129.36" class="combo">Q</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="191.68" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="204.68" class="combo">Q</text>
 </g>
 <g class="layer-Nav">
 <text x="30.0" y="364.0" class="label">Nav:</text>
@@ -300,8 +300,7 @@ path {
 <rect rx="6.0" ry="6.0" x="536.0" y="1066.0" width="52.0" height="52.0" class=""/>
 <text x="562.0" y="1092.0" class="tap">|</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="1083.36" width="52.0" height="52.0" class=""/>
-<text x="618.0" y="1109.36" class="tap">
-<tspan x="618.0" dy="-0.6em">Code</tspan><tspan x="618.0" dy="1.2em">Block</tspan></text>
+<text x="618.0" y="1109.36" class="tap">&lt;&gt;</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="1118.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="32.0" y="1174.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="88.0" y="1139.36" width="52.0" height="52.0" class="held"/>
@@ -328,12 +327,11 @@ path {
 <rect rx="6.0" ry="6.0" x="256.0" y="1201.52" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="424.0" y="1201.52" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="480.0" y="1193.68" width="52.0" height="52.0" class=""/>
-<text x="506.0" y="1219.68" class="tap">);</text>
+<text x="506.0" y="1219.68" class="tap">^</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="1178.0" width="52.0" height="52.0" class=""/>
-<text x="562.0" y="1204.0" class="tap">=&gt;</text>
+<text x="562.0" y="1204.0" class="tap">
+<tspan x="562.0" dy="-0.6em">md</tspan><tspan x="562.0" dy="1.2em">Code</tspan></text>
 <rect rx="6.0" ry="6.0" x="592.0" y="1195.3600000000001" width="52.0" height="52.0" class=""/>
-<text x="618.0" y="1221.3600000000001" class="tap">
-<tspan x="618.0" dy="-0.6em">get;</tspan><tspan x="618.0" dy="1.2em">set;</tspan></text>
 <rect rx="6.0" ry="6.0" x="648.0" y="1230.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="228.0" y="1276.0" width="52.0" height="52.0" class=""/>
 <text x="254.0" y="1302.0" class="tap">Nav</text>
@@ -382,8 +380,12 @@ path {
 <rect rx="6.0" ry="6.0" x="256.0" y="1537.52" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="424.0" y="1537.52" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="480.0" y="1529.68" width="52.0" height="52.0" class=""/>
+<text x="506.0" y="1555.68" class="tap">);</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="1514.0" width="52.0" height="52.0" class=""/>
+<text x="562.0" y="1540.0" class="tap">=&gt;</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="1531.3600000000001" width="52.0" height="52.0" class=""/>
+<text x="618.0" y="1557.3600000000001" class="tap">
+<tspan x="618.0" dy="-0.6em">get;</tspan><tspan x="618.0" dy="1.2em">set;</tspan></text>
 <rect rx="6.0" ry="6.0" x="648.0" y="1566.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="228.0" y="1612.0" width="52.0" height="52.0" class=""/>
 <text x="254.0" y="1638.0" class="tap">Nav</text>
@@ -485,7 +487,6 @@ path {
 <rect rx="6.0" ry="6.0" x="424.0" y="2097.52" width="52.0" height="52.0" class=""/>
 <text x="450.0" y="2123.52" class="tap">Boot</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="2089.68" width="52.0" height="52.0" class=""/>
-<text x="506.0" y="2115.68" class="tap">qmk</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="2074.0" width="52.0" height="52.0" class=""/>
 <text x="562.0" y="2100.0" class="tap">Kill</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="2091.36" width="52.0" height="52.0" class=""/>
