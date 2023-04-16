@@ -22,6 +22,7 @@ Every layer and mod key pictured is a sticky/one-shot unless labeled otherwise :
 Visualizations made with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 
 ## Base: APTv3
+![Base layer visualization](./assets/base_layer.svg)
 ### Keys: There's fewer of 'em.
 I use [APTv3](https://github.com/Apsu/APT). I like the fast rolls, the reduced inner index, and the overall handshapes (and more, but the alphas aren't actually the main point of the layout! They're just the starting point. There's weirder stuff on this layer alone.
 
@@ -46,6 +47,42 @@ Nav is accessed via home thumb layer tap, and the layer handles as little as pos
 
 ### Mods
 This layer has three kinds of mods on it! First, sticky inverted-T mods, for use on the layer and on any other. Second, a sticky *two-shot* Ctrl key for two-character shortcuts (again, Visual Studio, though it's useful in other circumstances!). Last, "locking" toggle-able mods for use with the arrows! The "locking" mods allow me to avoid holding mods with arrows, like when using mod+arrow-based multi-line editing. Nowadays, I primarily use it for resizing windows in my window manager, but having those on hand is great to reduce stress on my hand. All three of these types of mods are custom in [my QMK userspace](https://github.com/possumvibes/qmk_firmware/tree/possumdev/users/possumvibes).
+
+<br/>
+
+## Num
+todo: image.
+### Keys
+### Features
+
+<br/>
+
+## Sym
+todo: image.
+### Keys
+### Features
+
+
+<br/>
+
+## Func
+todo: image.
+### Keys
+### Features
+
+<br/>
+
+## Macro
+todo: image.
+### Keys
+### Features
+
+<br/>
+
+## System
+todo: image.
+### Keys
+### Features
 
 # probably delete this
 ### Smart Layers
