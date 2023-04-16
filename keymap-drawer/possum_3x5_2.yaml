@@ -12,6 +12,21 @@ layers:
   - ['', Alt, Ctl, Sft, '',   F5,   Left, Down, Right, Clear]
   - ['', '',  F12, 2xCtl, '',   { t: Gui, h: lock }, { t: LSft, h: lock }, { t: LCtl, h: lock }, { t: LAlt, h: lock },  '']
   - [{ t: Nav, type: held}, Shift, Macro, Space]
+  Combos-Adjacent:
+  - ['','','','','','','','','','']
+  - ['','','','','','','','','','']
+  - ['','','','','','','','','','']
+  - ['','','','',]
+  Combos-Vertical:
+  - ['','','','','','','','','','']
+  - ['','','','','','','','','','']
+  - ['','','','','','','','','','']
+  - ['','','','',]
+  Combos-Other:
+  - ['','','','','','','','','','']
+  - ['','','','','','','','','','']
+  - ['','','','','','','','','','']
+  - ['','','','',]
   Num:
   - [W, 7,8,9,'%',  '=', '+', '', PANIC, '']
   - [V, 4,5,6,$,  G,j,k, ':', '']
@@ -39,21 +54,6 @@ layers:
   - [QWERTY, ALT1, ALT2, APTv3, '',  IsWin, qmk com- pile, com- ment, 'vim quit!', '' ]
   - ['','','','','',                 '', qmk flash, uncom- ment, 'vim save- quit', '']
   - [Nav, Shift,  Shift, Space]
-  Adjacent:
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','',]
-  Vertical:
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','',]
-  Diagonal Mostly:
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','',]
 combos:
   #  0  1  2  3  4   5  6  7  8  9
   # 10 11 12 13 14  15 16 17 18 19
@@ -77,76 +77,76 @@ combos:
   # - { p: [12, 17],   k: PA- NIC, l: [Base],  a: top, o: 1.5  }
 
   ## DISPLAY UNIT: who knows honestly
-  # Horizontal Verticals
-  - { p: [1, 3],    k: Esc,   l: [Adjacent], a: bottom, o: -.1 }
-  - { p: [1, 2],    k: Z,     l: [Adjacent, Base] }
-  - { p: [2, 3],    k: Save,  l: [Adjacent] }
-  - { p: [3, 4],    k: '~',   l: [Adjacent] }
+  # Horizontal Combos-Verticals
+  - { p: [1, 3],    k: Esc,   l: [Combos-Adjacent], a: bottom, o: -.1 }
+  - { p: [1, 2],    k: Z,     l: [Combos-Adjacent, Base] }
+  - { p: [2, 3],    k: Save,  l: [Combos-Adjacent] }
+  - { p: [3, 4],    k: '~',   l: [Combos-Adjacent] }
 
-  - { p: [1, 2, 3],     k: Qu,        l: [Diagonal Mostly, Base], a: top }
-  - { p: [6, 7, 8],     k: vim yi,    l: [Diagonal Mostly], a: top }
+  - { p: [1, 2, 3],     k: Qu,        l: [Combos-Other, Base], a: top }
+  - { p: [6, 7, 8],     k: vim yi,    l: [Combos-Other], a: top }
   
-  - { p: [5, 6],     k: Undo,  l: [Adjacent] }
-  - { p: [6, 7],     k: Tab,   l: [Adjacent] }
-  - { p: [6, 8],     k: '"',   l: [Adjacent], a: bottom, o: -.1 }
+  - { p: [5, 6],     k: Undo,  l: [Combos-Adjacent] }
+  - { p: [6, 7],     k: Tab,   l: [Combos-Adjacent] }
+  - { p: [6, 8],     k: '"',   l: [Combos-Adjacent], a: bottom, o: -.1 }
 
       #/*---- HOME ROW HORIZONTAL----*/
-  - { p: [11, 13],   k: Cut,   l: [Adjacent], a: bottom, o: -.1 }
-  - { p: [11, 12],   k: Copy,  l: [Adjacent] }
-  - { p: [13, 14],   k: Paste, l: [Adjacent] }
+  - { p: [11, 13],   k: Cut,   l: [Combos-Adjacent], a: bottom, o: -.1 }
+  - { p: [11, 12],   k: Copy,  l: [Combos-Adjacent] }
+  - { p: [13, 14],   k: Paste, l: [Combos-Adjacent] }
 
 
-  - { p: [15, 16],   k: '^',   l: [Adjacent] }
-  - { p: [16, 17],   k: ':',   l: [Adjacent] }
-  - { p: [16, 18],   k: ';',   l: [Adjacent], a: bottom, o: -.1  }
+  - { p: [15, 16],   k: '^',   l: [Combos-Adjacent] }
+  - { p: [16, 17],   k: ':',   l: [Combos-Adjacent] }
+  - { p: [16, 18],   k: ';',   l: [Combos-Adjacent], a: bottom, o: -.1  }
 
   #/*---- BOTTOM ROW HORIZONTAL----*/
-  - { p: [21, 22],   k: 'Q',  l: [Adjacent, Base] }
-  - { p: [22, 23],   k: '*',  l: [Adjacent] }
-  - { p: [21, 23],   k: Ent,  l: [Adjacent], a: bottom, o: -.1 }
+  - { p: [21, 22],   k: 'Q',  l: [Combos-Adjacent, Base] }
+  - { p: [22, 23],   k: '*',  l: [Combos-Adjacent] }
+  - { p: [21, 23],   k: Ent,  l: [Combos-Adjacent], a: bottom, o: -.1 }
 
-  - { p: [21, 22, 23],   k: '[]',   l: [Diagonal Mostly], a: bottom, o: -.1 }
-  - { p: [26, 27, 28],  k: Caps Word,  l: [Diagonal Mostly], a: bottom, o: -.1 }
+  - { p: [21, 22, 23],   k: '[]',   l: [Combos-Other], a: bottom, o: -.1 }
+  - { p: [26, 27, 28],  k: Caps Word,  l: [Combos-Other], a: bottom, o: -.1 }
 
-  - { p: [26, 28],   k: '_',  l: [Adjacent], a: bottom, o: -.1  }
-  - { p: [26, 27],   k: '-',  l: [Adjacent] }
-  - { p: [27, 28],   k: Bspc, l: [Adjacent] }
+  - { p: [26, 28],   k: '_',  l: [Combos-Adjacent], a: bottom, o: -.1  }
+  - { p: [26, 27],   k: '-',  l: [Combos-Adjacent] }
+  - { p: [27, 28],   k: Bspc, l: [Combos-Adjacent] }
 
   # * --- TOP-HOME VERTICALS --- */
-  - { p: [11, 1],   k: '@',   l: [Vertical] }
-  - { p: [13, 3],   k: '%',   l: [Vertical] }
-  - { p: [14, 4],   k: '>',   l: [Vertical] }
+  - { p: [11, 1],   k: '@',   l: [Combos-Vertical] }
+  - { p: [13, 3],   k: '%',   l: [Combos-Vertical] }
+  - { p: [14, 4],   k: '>',   l: [Combos-Vertical] }
 
-  - { p: [15, 5],   k: '<',   l: [Vertical] }
-  - { p: [16, 6],   k: '$',   l: [Vertical] }
-  - { p: [18, 8],   k: '&',   l: [Vertical] }
+  - { p: [15, 5],   k: '<',   l: [Combos-Vertical] }
+  - { p: [16, 6],   k: '$',   l: [Combos-Vertical] }
+  - { p: [18, 8],   k: '&',   l: [Combos-Vertical] }
 
   # * --- HOME-BOTTOM VERTICALS --- */
-  - { p: [11, 21],   k: '`',  l: [Vertical] }
-  - { p: [12, 22],   k: Btn1, l: [Vertical] }
-  - { p: [13, 23],   k: Btn2, l: [Vertical] }
-  - { p: [14, 24],   k: C-w,  l: [Vertical] }
+  - { p: [11, 21],   k: '`',  l: [Combos-Vertical] }
+  - { p: [12, 22],   k: Btn1, l: [Combos-Vertical] }
+  - { p: [13, 23],   k: Btn2, l: [Combos-Vertical] }
+  - { p: [14, 24],   k: C-w,  l: [Combos-Vertical] }
 
-  - { p: [16, 26],   k: '#',  l: [Vertical] }
-  - { p: [17, 27],   k: '/',  l: [Vertical] }
-  - { p: [18, 28],   k: '\',  l: [Vertical] }
+  - { p: [16, 26],   k: '#',  l: [Combos-Vertical] }
+  - { p: [17, 27],   k: '/',  l: [Combos-Vertical] }
+  - { p: [18, 28],   k: '\',  l: [Combos-Vertical] }
 
   ## DIAGONALS ALL GO TOGETHER.
   # *---- TOP-HOME ADJACENT DIAGONALS ----*/
-  - { p: [0, 11],   k: Ctl,   l: [Diagonal Mostly], d: True}
-  - { p: [2, 13],   k: '[',   l: [Diagonal Mostly], d: True}
-  - { p: [3, 14],   k: WhUp,  l: [Diagonal Mostly], d: True}
+  - { p: [0, 11],   k: Ctl,   l: [Combos-Other], d: True}
+  - { p: [2, 13],   k: '[',   l: [Combos-Other], d: True}
+  - { p: [3, 14],   k: WhUp,  l: [Combos-Other], d: True}
 
-  - { p: [6, 15],   k: PgUp,  l: [Diagonal Mostly], d: True }
-  - { p: [7, 16],   k: ']',   l: [Diagonal Mostly], d: True }
-  - { p: [9, 18],   k: Del,   l: [Diagonal Mostly], d: True }
+  - { p: [6, 15],   k: PgUp,  l: [Combos-Other], d: True }
+  - { p: [7, 16],   k: ']',   l: [Combos-Other], d: True }
+  - { p: [9, 18],   k: Del,   l: [Combos-Other], d: True }
 
   # *---- HOME-BOTTOM ADJACENT DIAGONALS ----*/
-  - { p: [11, 23],  k: Caps,  l: [Diagonal Mostly], d: True, slide: .2 }
-  - { p: [12, 23],  k: '(',   l: [Diagonal Mostly], d: True }
-  - { p: [13, 24],  k: WhDn,  l: [Diagonal Mostly], d: True }
+  - { p: [11, 23],  k: Caps,  l: [Combos-Other], d: True, slide: .2 }
+  - { p: [12, 23],  k: '(',   l: [Combos-Other], d: True }
+  - { p: [13, 24],  k: WhDn,  l: [Combos-Other], d: True }
 
-  - { p: [16, 25],  k: PgDn,  l: [Diagonal Mostly], d: True }
-  - { p: [17, 26],  k: ')',   l: [Diagonal Mostly], d: True }
-  - { p: [18, 26],  k: Apps,  l: [Diagonal Mostly], d: True, slide: .2 }
-  - { p: [19, 28],  k: Del,   l: [Diagonal Mostly], d: True }
+  - { p: [16, 25],  k: PgDn,  l: [Combos-Other], d: True }
+  - { p: [17, 26],  k: ')',   l: [Combos-Other], d: True }
+  - { p: [18, 26],  k: Apps,  l: [Combos-Other], d: True, slide: .2 }
+  - { p: [19, 28],  k: Del,   l: [Combos-Other], d: True }
