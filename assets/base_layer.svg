@@ -149,6 +149,11 @@ path {
 <text x="422.0" y="332.0" class="hold">sticky</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="268.0" width="52.0" height="52.0" class=""/>
 <text x="478.0" y="294.0" class="tap">Space</text>
+<path d="M366.0,140.0 l-177.33333333333334,0.0"/>
+<path d="M366.0,140.0 l177.33333333333334,0.0"/>
+<rect rx="6.0" ry="6.0" x="352.0" y="127.0" width="28.0" height="26.0" class="combo"/>
+<text x="366.0" y="140.0" class="combo">
+<tspan x="366.0" dy="-0.6em">PA-</tspan><tspan x="366.0" dy="1.2em">NIC</tspan></text>
 <rect rx="6.0" ry="6.0" x="128.0" y="79.68" width="28.0" height="26.0" class="combo"/>
 <text x="142.0" y="92.68" class="combo">Z</text>
 <path d="M170.0,55.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v21.69333333333333"/>
@@ -158,10 +163,5 @@ path {
 <text x="170.0" y="55.0" class="combo">Qu</text>
 <rect rx="6.0" ry="6.0" x="128.0" y="191.68" width="28.0" height="26.0" class="combo"/>
 <text x="142.0" y="204.68" class="combo">Q</text>
-<path d="M366.0,140.0 l-177.33333333333334,0.0"/>
-<path d="M366.0,140.0 l177.33333333333334,0.0"/>
-<rect rx="6.0" ry="6.0" x="352.0" y="127.0" width="28.0" height="26.0" class="combo"/>
-<text x="366.0" y="140.0" class="combo">
-<tspan x="366.0" dy="-0.6em">PA-</tspan><tspan x="366.0" dy="1.2em">NIC</tspan></text>
 </g>
 </svg>
