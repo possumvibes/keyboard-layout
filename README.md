@@ -1,50 +1,53 @@
-# the possumvibes keymap, or the tale of "What If There Was Caps-Word But For Numbers?"
+# the possumvibes keymap
 
-## the possumvibes layout: an overview
-A (QMK) featureset designed around holding keys down as little as possible, keeping finger use balanced across all layers, and reducing fast and/or repetitive thumb movement as much as possible. This layout leverages combos, home row mods, smart layers, one- and two-shot (*n*-shot, to be specific) mods, and locking mods to reduce the number of held keys across the board. In fact, there's only one!
+Here exists a visualization and explanation of ~~what the hell is happening on my keymap~~ my combo-first, 31-ish key layout!
 
-### Design Principles
-- Hand and finger balance. 
-- Tap-focused rather than hold-focused.
-- Balanced (minimal) thumb load.
-- Fast access to commonly needed symbols and operations.
+Bird's eye view:
+- 31-ish keys (from a 34-key base)
+- Combo-first approach for minimal held keys, including layer toggles
+- "Smart" layers, or layer toggles that exit the layer automatically on particular keypress
+- Sticky/One-shot mods (including a two-shot sticky mod!)
+- Lots of macros and custom shifted behaviors to reduce extra keypresses
+- An alternate layout that works comfortably for my hands ([APTv3](https://github.com/Apsu/APT))
 
-...which all sums up neatly into a layout fine-tuned to benefit my combination of hypermobility and RSI!
+I (the aforementioned possumvibes) have hypermobile joints that *really* like to overextend on the keyboard, and repetitive strain injury in my thumbs. I use small, low-profile split keyboards to reduce hand movement overall, and I use this layout on those boards to reduce joint strain and pressure (and it's comfy!).
 
-## The Keys
+## the images
+(Coming soon: images broken out by layer-grouping. for now there is one giant image. good luck.)
+
 Every layer and mod key pictured is a sticky/one-shot unless labeled otherwise :D
-
-Layer accesses are highlighted in red on each layer. All but two total are combos, and most of those are same-hand thumb-finger combos. Most layers have multiple access points.
-
-The base alpha layout is [APTv3](https://github.com/Apsu/APT) with several keys removed because my hands don't like to bend that way. This first visualization is just my actual keymap layers, and so it's missing a lot of keys. Over 50 of them, in fact, all available on every layer! I have a separate combos-only visualization after this one. (I am also still figuring out the most sensible way to show all these layers and combos.)
 
 ![Current layout visualization](./assets/layers-only.svg)
 
 Visualizations made with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 
-## The Alphas
-My alpha layout is APTv3, linked in the Sources section, and I've been using it since January 2022. It is straight up the most comfortable layout I have ever used. The combination of reduced inner index and overall comfortable handshapes makes for a really comfy layout that also plays nicely with the ways my hands like to injure themselves. (also RSTH homerow best homerow) 
+## Base: APTv3
+### Keys: There's fewer of 'em.
+I use [APTv3](https://github.com/Apsu/APT). I like the fast rolls, the reduced inner index, and the overall handshapes (and more, but the alphas aren't actually the main point of the layout! They're just the starting point. There's weirder stuff on this layer alone.
 
-A significant number of my convenience macros are designed to prevent having to track keys down for shortcuts with a non-QWERTY layout. As a result, there are no alpha-layout-specific features or expected inputs in the overall keymap. 
+I have a reduced range of motion in my right index and pinky (well, sort of. *Technically* I actually have an *extremely wide* range of motion in these fingers, with strong likelihood of my joints trying to exit their sockets. I try to discourage that kind of shenanigan). On the right hand, it's painful for me to reach upper and lower lateral index and it's a strain to press lower pinky. I have removed these three keys from my layout and moved the things that used to be there (Q, Z, ;) to combos.
 
-I use inverted-T tap-hold mods on base for shortcuts and navigation. These are the primary holds on the board, and I have alternate options.
+### COMBOS: WE GOT 'EM.
+As mentioned, I've got `Q` and `Z` on combos. I also have `Qu` as a convenience combo, and I find I use it much more frequently than `q` alone. But! Remember how I described this layout as "combo-heavy"? Well, I have 57 combos at the time of writing and they are all accessible on all layers. Even my layers are nearly all accessed by combo! These will be split among the images for readability's sake, but every combo pictured is indeed available on Base and every other layer. 
 
-I use a dedicated one-shot thumb key shift so I never have to hold shift down.
+### Thumbs
+My thumbs have a fun double-whammy of RSI and easy overextension. I've found reducing overall burden and eliminating held keys as much as possible to be the best approach. Accordingly, Nav is the only held layer in my layout, because I use it for variable lengths every time. That key is also a tap-toggle for the layer, though, so I can reduce holds even so. My left hand reachy is sticky Shift, and I find I home between those two keys. On the right hand, I home on Space. This hand is *really* sensitive to strain, so my reachy key has been a no-op for some time and now is *very tentatively* a sticky Macro-layer. I use adjacent thumb combos and reachy thumb+same-hand alpha combos for layer access (pictured by layer).
 
-**Don't worry if the alpha layout isn't what you like!** I use APTv3 with a reduced amount of characters because of my hands' needs. This is a living document of the overall keymap that works for me, and the alpha layout that works for my hands may not be the right one for yours. My hope with this doc is to present ideas around RSI/hypermobility-friendly layout design that I haven't seen elsewhere and were the critical pieces that have kept me able to work at a keyboard.
+### Mods
+I use inverted-T mods (home-row mods, but make it WASD instead of HJKL) for fast shortcuts. I have fairly low tapping terms on these and use them near-exclusively for mod combinations on shortcuts--I do not use my home row Shift to shift text. I use my thumbshift for that instead! Held keys like these are very stressful on my joints, so I have both home row mods and sticky mods on layers. Overall, it is far less stressful for my joints to manage Alt, Ctrl, and Gui as tap-hold mods and Shift as a tap on thumb. I also leverage Caps Word and Caps Lock to reduce the amount of Shift usage. The most important thing for my hands is having options that I can shift (pun intended) toward when one method is causing overwork.
 
-## The Features
+<br/>
 
-### N-shot mods
-I have rolled my own QMK oneshot/sticky mods, based on the Callum userspace implementation, but with the twist of being able to specify how many keypresses the mod should be active for. Thus, *n*-shot mods rather than one-shots! I use this primarily for a two-shot Ctrl key, which is very useful when working with many multi-key shortcuts! Keys to be ignored toward the n-shot count and keys to clear the n-shot mod are defined once and apply to all defined mods like in the original Callum implementation. 
+## Nav
+todo: image.
 
-All dedicated mod keys on my keymap are n-shots unless specified otherwise.
+### Keys
+Nav is accessed via home thumb layer tap, and the layer handles as little as possible to reduce the amount of thumb-holds. There's very little outside the scope of arrows, navigation keys, and mods--F5 is both refresh and my debugging "continue" key; F12 is the Visual Studio "Go to definition/go to implementation" key, and just about everything else is mods.
 
-**QMK Specifics**
-This implementation solves the issue of shifting extra characters when rolling present in the base Callum implementation. It also makes the ability to roll _into_ the mod customizable. When held for longer than TAPPING_TERM without another keypress, the mod will act as a normal held mod and release without queueing.
+### Mods
+This layer has three kinds of mods on it! First, sticky inverted-T mods, for use on the layer and on any other. Second, a sticky *two-shot* Ctrl key for two-character shortcuts (again, Visual Studio, though it's useful in other circumstances!). Last, "locking" toggle-able mods for use with the arrows! The "locking" mods allow me to avoid holding mods with arrows, like when using mod+arrow-based multi-line editing. Nowadays, I primarily use it for resizing windows in my window manager, but having those on hand is great to reduce stress on my hand. All three of these types of mods are custom in [my QMK userspace](https://github.com/possumvibes/qmk_firmware/tree/possumdev/users/possumvibes).
 
-I use an n-shot shift as my thumbshift to allow me to create functionally order-agnostic layer and mod activation (e.g., Shift Num nets me Num layer with Shift queued). If you're considering using these n-shots and don't have that requirement, *use the qmk default OSM for thumbshift instead*. 
-
+# probably delete this
 ### Smart Layers
 Smart layers are, functionally, caps word but for your layer of choice, with cancel keys defined. As an example, I have NumMode and FuncMode, each of which allow me to keep typing numbers or f-keys respectively until I hit a cancel key. I access these by combo and use the combination (eyyy) of features to eliminate held layer keys. My original implementation is adapted from the T-34 layout, linked in the code influences section, and has since been expanded to cover nearly all my layers. 
 
