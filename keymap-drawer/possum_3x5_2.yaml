@@ -6,7 +6,7 @@ layers:
   - [R, { t: S, h: Alt }, { t: T, h: Ctl }, { t: H, h: Sft }, K]
   - [J, { t: N, h: Sft }, { t: E, h: Ctl }, { t: A, h: Alt }, I]
   - [X, C, M, P, V,  '', "'", ",", ., '' ]
-  - [Nav, Shift, Macro, Space]
+  - [Nav, { t: Shift, h: sticky }, { t: Macro, h: sticky }, Space]
   Nav:
   - ['', Back, Gui, Fwd, GCtl,  GCtl, Home, Up,   End,   '']
   - ['', Alt, Ctl, Shift, '',   F5,   Left, Down, Right, Clear]
@@ -14,31 +14,31 @@ layers:
   - [{ t: Nav, type: held}, Shift, Macro, Space]
   Num:
   - [W, 7,8,9,'%',  '=', '+', '', PANIC, '']
-  - [V, 4,5,6,$,  G,j,{ t: k, type: held },{ t: ':', type: held },'']
+  - [V, 4,5,6,$,  G,j,k, ':', '']
   - [X, 1,2,3,'', '','','','','',]
-  - [Nav, 0,      { t: Macro, type: held }, Space]
+  - [Nav, 0,      Macro, Space]
   Sym:
-  - ['', '', 'Gui', '', '',  '', '=', '|',  '<>', '']
-  - ['',{t: 'Alt', type: held}, 'Ctl', 'Sft', '']
-  - ['', '+',  '&',  'md Link', '']
-  - ['','', Alt, '', '',     '', '^', 'md Code', '', '']
-  - [Nav, { t: Shift, type: held }, Shift, Space]
+  - ['', '', 'Gui', '', '',  'md Code', '=', '|',  '<>', '']
+  - ['', 'Alt', 'Ctl', 'Sft', '']
+  - ['=>', '+',  '&',  'md Link', '']
+  - ['','', Alt, '', '',     '', '^', ');', 'get; set;', '']
+  - [Nav, Shift,  Shift, Space]
   Macro:
   - ['', v1, v2, v3, '',  '', w, yiw, yaw, '']
-  - ['','',{ t: '', type: held },'','',      '', y, iw, aw, '']
-  - ['','','','','',      '', ');', '=>', 'get; set;', '']
-  - [Nav, { t: Shift, type: held }, Shift, Space]
+  - ['','','vim aw', 'vim iw','',      '', y, 'vim iw', 'vim aw', '']
+  - ['','','','','',      '', '', '', '', '']
+  - [Nav, Shift,  Shift, Space]
   Func:
   - [Alt, Wksp 9, Last Wksp, Last Node, Wksp 0,  F5, F6, F7, F8, Gui]
-  - [Ctl, Wksp 1, Wksp 2, { t: Wksp 3, type: held }, Wksp 4]
-  - [F9, { t: F11, type: held }, F10, F6, Ctl]
+  - [Ctl, Wksp 1, Wksp 2, Wksp 3, Wksp 4]
+  - [F9, F11, F10, F6, Ctl]
   - ['',  Wksp 5, Wksp 6, Wksp 7, Wksp 8,        F1, F2, F3, F4, '']
-  - [Nav, { t: Shift, type: held }, { t: Macro, type: held }, Space]
+  - [Nav, Shift,  Shift, Space]
   System:
   - ['','','','','',                 Boot, '', Kill, '', '']
-  - [QWERTY, ALT1, ALT2, APTv3, '',  IsWin, qmk com- pile, com- ment, ZQ, '' ]
-  - ['','','','','',                 '', qmk flash, uncom- ment, ZZ, '']
-  - [{ t: Nav, type: held }, { t: Shift, type: held }, Macro, Space]
+  - [QWERTY, ALT1, ALT2, APTv3, '',  IsWin, qmk com- pile, com- ment, 'vim quit!', '' ]
+  - ['','','','','',                 '', qmk flash, uncom- ment, 'vim save- quit', '']
+  - [Nav, Shift,  Shift, Space]
   Adjacent:
   - ['','','','','','','','','','']
   - ['','','','','','','','','','']
@@ -54,11 +54,6 @@ layers:
   - ['','','','','','','','','','']
   - ['','','','','','','','','','']
   - ['','','','',]
-  Layers:
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','','','','','','','']
-  - ['','','','',]
 combos:
   #  0  1  2  3  4   5  6  7  8  9
   # 10 11 12 13 14  15 16 17 18 19
@@ -70,8 +65,8 @@ combos:
   - { p: [2, 3],    k: Save,  l: [Adjacent] }
   - { p: [3, 4],    k: '~',   l: [Adjacent] }
 
-  - { p: [1, 2, 3],     k: Qu,    l: [Diagonal Mostly, Base], a: top }
-  - { p: [6, 7, 8],     k: yi,    l: [Diagonal Mostly], a: top }
+  - { p: [1, 2, 3],     k: Qu,        l: [Diagonal Mostly, Base], a: top }
+  - { p: [6, 7, 8],     k: vim yi,    l: [Diagonal Mostly], a: top }
   
   - { p: [5, 6],     k: Undo,  l: [Adjacent] }
   - { p: [6, 7],     k: Tab,   l: [Adjacent] }
@@ -100,23 +95,23 @@ combos:
   - { p: [27, 28],   k: Bspc, l: [Adjacent] }
 
   # * --- TOP-HOME VERTICALS --- */
-  - { p: [11, 1],   k: '@',   l: [Vertical] }
-  - { p: [13, 3],   k: '%',   l: [Vertical] }
-  - { p: [14, 4],   k: '>',   l: [Vertical] }
+  - { p: [11, 1],   k: '@',   l: [Vertical, Num] }
+  - { p: [13, 3],   k: '%',   l: [Vertical, Num] }
+  - { p: [14, 4],   k: '>',   l: [Vertical, Num] }
 
-  - { p: [15, 5],   k: '<',   l: [Vertical] }
-  - { p: [16, 6],   k: '$',   l: [Vertical] }
-  - { p: [18, 8],   k: '&',   l: [Vertical] }
+  - { p: [15, 5],   k: '<',   l: [Vertical, Num] }
+  - { p: [16, 6],   k: '$',   l: [Vertical, Num] }
+  - { p: [18, 8],   k: '&',   l: [Vertical, Num] }
 
   # * --- HOME-BOTTOM VERTICALS --- */
-  - { p: [11, 21],   k: '`',  l: [Vertical] }
-  - { p: [12, 22],   k: Btn1, l: [Vertical] }
-  - { p: [13, 23],   k: Btn2, l: [Vertical] }
-  - { p: [14, 24],   k: C-w,  l: [Vertical] }
+  - { p: [11, 21],   k: '`',  l: [Vertical, Num] }
+  - { p: [12, 22],   k: Btn1, l: [Vertical, Num] }
+  - { p: [13, 23],   k: Btn2, l: [Vertical, Num] }
+  - { p: [14, 24],   k: C-w,  l: [Vertical, Num] }
 
-  - { p: [16, 26],   k: '#',  l: [Vertical] }
-  - { p: [17, 27],   k: '/',  l: [Vertical] }
-  - { p: [18, 28],   k: '\',  l: [Vertical] }
+  - { p: [16, 26],   k: '#',  l: [Vertical, Num] }
+  - { p: [17, 27],   k: '/',  l: [Vertical, Num] }
+  - { p: [18, 28],   k: '\',  l: [Vertical, Num] }
 
   ## DIAGONALS ALL GO TOGETHER.
   # *---- TOP-HOME ADJACENT DIAGONALS ----*/
@@ -140,17 +135,17 @@ combos:
 
   ## DISPLAY UNIT: Layer Combos (to and from!)
   # *---- CROSS-HAND ----*/
-  - { p: [12, 17],   k: PA- NIC, l: [Layers], a: top, o: .3 }
+  - { p: [12, 17],   k: PA- NIC, l: [Base] }
 
   # *---- THUMBS ----*/
-  - { p: [30, 31],   k: Sys,   l: [Layers], a: bottom, o: -.1 }
-  - { p: [33, 32],   k: Macr,  l: [Layers], a: bottom, o: -.1 }
+  - { p: [30, 31],   k: Sys,   l: [System], a: bottom, o: -.1 }
+  - { p: [33, 32],   k: Macr,  l: [Macro], a: bottom, o: -.1 }
 
   # *---- DIAGONAL THUMBS ----*/
-  - { p: [31, 11],   k: Sym,   l: [Layers], slide: .95 }
-  - { p: [31, 12],   k: Macr,  l: [Layers], slide: .95 }
-  - { p: [31, 13],   k: Func,  l: [Layers], slide: .95 }
-  - { p: [32, 16],   k: Func,  l: [Layers], slide: .95 }
-  - { p: [32, 17],   k: Num OS, l: [Layers], slide: .95 }
-  - { p: [32, 18],   k: Num Mode,   l: [Layers], slide: .95 }
+  - { p: [31, 11],   k: Sym,   l: [Sym], a: bottom, slide: -1}
+  - { p: [31, 12],   k: Macr,  l: [Macro], a: bottom, slide: -1 }
+  - { p: [31, 13],   k: Func,  l: [Func], a: right, o: -.1, slide: -.5 }
+  - { p: [32, 16],   k: Func,  l: [Func], a: left, o: -.1, slide: .5 }
+  - { p: [32, 17],   k: Num OS, l: [Num], a: left, o: .4, slide: .7 }
+  - { p: [32, 18],   k: Num Mode,   l: [Num], a: left, slide: .45 }
 
