@@ -13,11 +13,7 @@ Bird's eye view:
 I (the aforementioned possumvibes) have hypermobile joints that *really* like to overextend on the keyboard, and repetitive strain injury in my thumbs. I use small, low-profile split keyboards to reduce hand movement overall, and I use this layout on those boards to reduce joint strain and pressure (and it's comfy!).
 
 ## the images
-(Coming soon: images broken out by layer-grouping. for now there is one giant image. good luck.)
-
 Every layer and mod key pictured is a sticky/one-shot unless labeled otherwise :D
-
-![Current layout visualization](./assets/layers-only.svg)
 
 Visualizations made with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 
@@ -51,14 +47,14 @@ This layer has three kinds of mods on it! First, sticky inverted-T mods, for use
 <br/>
 
 ## Num
-todo: image.
+![Number layer visualization](./assets/num_layer.svg)
 ### Keys
 ### Features
 
 <br/>
 
 ## Sym
-todo: image.
+![Symbol layer visualization](./assets/sym_layer.svg)
 ### Keys
 ### Features
 
@@ -66,21 +62,21 @@ todo: image.
 <br/>
 
 ## Func
-todo: image.
+![Function layer visualization](./assets/func_layer.svg)
 ### Keys
 ### Features
 
 <br/>
 
 ## Macro
-todo: image.
+![Macro layer visualization](./assets/macro_layer.svg)
 ### Keys
 ### Features
 
 <br/>
 
 ## System
-todo: image.
+![System layer visualization](./assets/system_layer.svg)
 ### Keys
 ### Features
 
@@ -110,7 +106,6 @@ I also override the shifts on most combos to eliminate extra presses, like doubl
 
 The combo visuals will say more than I can (and the combos can be read in full in my keymap, linked in the Sources section, or read in shorthand in the [keymap-drawer.yaml](./keymap-drawer/possum_3x5_2.yaml)).
 
-![Combo visualization](./assets/combos-only.svg)
 
 ### Sources
 [My QMK Userspace](https://github.com/possumvibes/qmk_firmware/tree/possumdev/users/possumvibes), branch `possumdev`, where everything above is coded (my README there has more history and a how-to-navigate-the-userspace guide)
