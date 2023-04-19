@@ -154,13 +154,13 @@ path {
 <tspan x="366.0" dy="-0.6em">PA-</tspan><tspan x="366.0" dy="1.2em">NIC</tspan></text>
 <rect rx="6.0" ry="6.0" x="128.0" y="79.68" width="28.0" height="26.0" class="combo"/>
 <text x="142.0" y="92.68" class="combo">Z</text>
+<rect rx="6.0" ry="6.0" x="128.0" y="191.68" width="28.0" height="26.0" class="combo"/>
+<text x="142.0" y="204.68" class="combo">Q</text>
 <path d="M170.0,55.0 h-50.0 a6.0,6.0 0 0 0 -6.0,6.0 v21.69333333333333"/>
 <path d="M170.0,55.0 h-6.0 a6.0,6.0 0 0 0 6.0,6.0 v11.8"/>
 <path d="M170.0,55.0 h50.0 a6.0,6.0 0 0 1 6.0,6.0 v20.01333333333334"/>
 <rect rx="6.0" ry="6.0" x="156.0" y="42.0" width="28.0" height="26.0" class="combo"/>
 <text x="170.0" y="55.0" class="combo">Qu</text>
-<rect rx="6.0" ry="6.0" x="128.0" y="191.68" width="28.0" height="26.0" class="combo"/>
-<text x="142.0" y="204.68" class="combo">Q</text>
 </g>
 <g class="layer-Nav">
 <text x="30.0" y="364.0" class="label">Nav:</text>
@@ -178,7 +178,7 @@ path {
 <rect rx="6.0" ry="6.0" x="480.0" y="409.68" width="52.0" height="52.0" class=""/>
 <text x="506.0" y="435.68" class="tap">Home</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="394.0" width="52.0" height="52.0" class=""/>
-<text x="562.0" y="420.0" class="tap">Up</text>
+<text x="562.0" y="420.0" class="tap">↑</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="411.36" width="52.0" height="52.0" class=""/>
 <text x="618.0" y="437.36" class="tap">End</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="446.08000000000004" width="52.0" height="52.0" class=""/>
@@ -193,13 +193,14 @@ path {
 <rect rx="6.0" ry="6.0" x="424.0" y="473.52" width="52.0" height="52.0" class=""/>
 <text x="450.0" y="499.52" class="tap">F5</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="465.68" width="52.0" height="52.0" class=""/>
-<text x="506.0" y="491.68" class="tap">Left</text>
+<text x="506.0" y="491.68" class="tap">←</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="450.0" width="52.0" height="52.0" class=""/>
-<text x="562.0" y="476.0" class="tap">Down</text>
+<text x="562.0" y="476.0" class="tap">↓</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="467.36" width="52.0" height="52.0" class=""/>
-<text x="618.0" y="493.36" class="tap">Right</text>
+<text x="618.0" y="493.36" class="tap">→</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="502.0799999999999" width="52.0" height="52.0" class=""/>
-<text x="674.0" y="528.0799999999999" class="tap">Clear</text>
+<text x="674.0" y="528.0799999999999" class="tap">
+<tspan x="674.0" dy="-0.6em">Clr</tspan><tspan x="674.0" dy="1.2em">Mod</tspan></text>
 <rect rx="6.0" ry="6.0" x="32.0" y="558.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="88.0" y="523.36" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="144.0" y="506.0" width="52.0" height="52.0" class=""/>
@@ -209,16 +210,16 @@ path {
 <rect rx="6.0" ry="6.0" x="256.0" y="529.52" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="424.0" y="529.52" width="52.0" height="52.0" class=""/>
 <text x="450.0" y="555.52" class="tap">Gui</text>
-<text x="450.0" y="579.52" class="hold">lock</text>
+<text x="450.0" y="579.52" class="hold">locking</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="521.68" width="52.0" height="52.0" class=""/>
-<text x="506.0" y="547.68" class="tap">LSft</text>
-<text x="506.0" y="571.68" class="hold">lock</text>
+<text x="506.0" y="547.68" class="tap">Sft</text>
+<text x="506.0" y="571.68" class="hold">locking</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="506.0" width="52.0" height="52.0" class=""/>
-<text x="562.0" y="532.0" class="tap">LCtl</text>
-<text x="562.0" y="556.0" class="hold">lock</text>
+<text x="562.0" y="532.0" class="tap">Ctl</text>
+<text x="562.0" y="556.0" class="hold">locking</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="523.36" width="52.0" height="52.0" class=""/>
-<text x="618.0" y="549.36" class="tap">LAlt</text>
-<text x="618.0" y="573.36" class="hold">lock</text>
+<text x="618.0" y="549.36" class="tap">Alt</text>
+<text x="618.0" y="573.36" class="hold">locking</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="558.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="228.0" y="604.0" width="52.0" height="52.0" class="held"/>
 <text x="254.0" y="630.0" class="held tap">Nav</text>
@@ -227,6 +228,44 @@ path {
 <rect rx="6.0" ry="6.0" x="396.0" y="618.0" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="452.0" y="604.0" width="52.0" height="52.0" class=""/>
 <text x="478.0" y="630.0" class="tap">Space</text>
+<path d="M148.6,504.0 v-22.0 a6.0,6.0 0 0 1 6.0,-6.0 h-3.266666666666662"/>
+<path d="M148.6,504.0 v22.0 a6.0,6.0 0 0 0 6.0,6.0 h-3.266666666666662"/>
+<rect rx="6.0" ry="6.0" x="134.6" y="491.0" width="28.0" height="26.0" class="combo"/>
+<text x="148.6" y="504.0" class="combo">
+<tspan x="148.6" dy="-0.6em">L</tspan><tspan x="148.6" dy="1.2em">Clck</tspan></text>
+<path d="M204.6,519.68 v-21.999999999999943 a6.0,6.0 0 0 1 6.0,-6.0 h-3.266666666666662"/>
+<path d="M204.6,519.68 v22.0 a6.0,6.0 0 0 0 6.0,6.0 h-3.266666666666662"/>
+<rect rx="6.0" ry="6.0" x="190.6" y="506.67999999999995" width="28.0" height="26.0" class="combo"/>
+<text x="204.6" y="519.68" class="combo">
+<tspan x="204.6" dy="-0.6em">R</tspan><tspan x="204.6" dy="1.2em">Clck</tspan></text>
+<path d="M86.0,482.72 l-10.55070649568415,-4.009268468359972"/>
+<path d="M86.0,482.72 l10.55070649568415,4.009268468359972"/>
+<rect rx="6.0" ry="6.0" x="72.0" y="469.72" width="28.0" height="26.0" class="combo"/>
+<text x="86.0" y="482.72" class="combo">Ctl</text>
+<path d="M254.0,467.6 l-15.690494058248133,-17.88716322640288"/>
+<path d="M254.0,467.6 l15.69049405824812,17.887163226402834"/>
+<rect rx="6.0" ry="6.0" x="240.0" y="454.6" width="28.0" height="26.0" class="combo"/>
+<text x="254.0" y="467.6" class="combo">WhUp</text>
+<path d="M478.0,467.6 l15.690494058248133,-17.88716322640288"/>
+<path d="M478.0,467.6 l-15.69049405824812,17.887163226402834"/>
+<rect rx="6.0" ry="6.0" x="464.0" y="454.6" width="28.0" height="26.0" class="combo"/>
+<text x="478.0" y="467.6" class="combo">PgUp</text>
+<path d="M646.0,482.72 l10.55070649568415,-4.009268468359972"/>
+<path d="M646.0,482.72 l-10.55070649568415,4.009268468359972"/>
+<rect rx="6.0" ry="6.0" x="632.0" y="469.72" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="482.72" class="combo">Del</text>
+<path d="M254.0,523.6 l-15.690494058248133,-17.88716322640288"/>
+<path d="M254.0,523.6 l15.69049405824812,17.887163226402834"/>
+<rect rx="6.0" ry="6.0" x="240.0" y="510.6" width="28.0" height="26.0" class="combo"/>
+<text x="254.0" y="523.6" class="combo">WhDn</text>
+<path d="M478.0,523.6 l15.690494058248133,-17.88716322640288"/>
+<path d="M478.0,523.6 l-15.69049405824812,17.887163226402834"/>
+<rect rx="6.0" ry="6.0" x="464.0" y="510.6" width="28.0" height="26.0" class="combo"/>
+<text x="478.0" y="523.6" class="combo">PgDn</text>
+<path d="M646.0,538.72 l10.550706495684175,-4.009268468360024"/>
+<path d="M646.0,538.72 l-10.55070649568415,4.009268468359972"/>
+<rect rx="6.0" ry="6.0" x="632.0" y="525.72" width="28.0" height="26.0" class="combo"/>
+<text x="646.0" y="538.72" class="combo">Del</text>
 </g>
 <g class="layer-Combos-Adjacent">
 <text x="30.0" y="700.0" class="label">Combos-Adjacent:</text>
@@ -365,10 +404,16 @@ path {
 <text x="618.0" y="1131.76" class="combo">&amp;</text>
 <rect rx="6.0" ry="6.0" x="100.0" y="1174.7600000000002" width="28.0" height="26.0" class="combo"/>
 <text x="114.0" y="1187.7600000000002" class="combo">`</text>
-<rect rx="6.0" ry="6.0" x="156.0" y="1157.4" width="28.0" height="26.0" class="combo"/>
-<text x="170.0" y="1170.4" class="combo">Btn1</text>
-<rect rx="6.0" ry="6.0" x="212.0" y="1173.0800000000002" width="28.0" height="26.0" class="combo"/>
-<text x="226.0" y="1186.0800000000002" class="combo">Btn2</text>
+<path d="M148.6,1170.4 v-22.0 a6.0,6.0 0 0 1 6.0,-6.0 h-3.266666666666662"/>
+<path d="M148.6,1170.4 v22.0 a6.0,6.0 0 0 0 6.0,6.0 h-3.266666666666662"/>
+<rect rx="6.0" ry="6.0" x="134.6" y="1157.4" width="28.0" height="26.0" class="combo"/>
+<text x="148.6" y="1170.4" class="combo">
+<tspan x="148.6" dy="-0.6em">L</tspan><tspan x="148.6" dy="1.2em">Clck</tspan></text>
+<path d="M204.6,1186.0800000000002 v-22.0 a6.0,6.0 0 0 1 6.0,-6.0 h-3.266666666666662"/>
+<path d="M204.6,1186.0800000000002 v22.0 a6.0,6.0 0 0 0 6.0,6.0 h-3.266666666666662"/>
+<rect rx="6.0" ry="6.0" x="190.6" y="1173.0800000000002" width="28.0" height="26.0" class="combo"/>
+<text x="204.6" y="1186.0800000000002" class="combo">
+<tspan x="204.6" dy="-0.6em">R</tspan><tspan x="204.6" dy="1.2em">Clck</tspan></text>
 <rect rx="6.0" ry="6.0" x="268.0" y="1180.92" width="28.0" height="26.0" class="combo"/>
 <text x="282.0" y="1193.92" class="combo">C-w</text>
 <rect rx="6.0" ry="6.0" x="492.0" y="1173.0800000000002" width="28.0" height="26.0" class="combo"/>
@@ -460,10 +505,6 @@ path {
 <path d="M646.0,1485.1200000000001 l-10.550706495684125,4.009268468359919"/>
 <rect rx="6.0" ry="6.0" x="632.0" y="1472.1200000000001" width="28.0" height="26.0" class="combo"/>
 <text x="646.0" y="1485.1200000000001" class="combo">Del</text>
-<path d="M158.8,1517.488 l-28.004469116063856,-13.582167521291009"/>
-<path d="M158.8,1517.488 l50.40446911606384,24.446167521291038"/>
-<rect rx="6.0" ry="6.0" x="144.8" y="1504.488" width="28.0" height="26.0" class="combo"/>
-<text x="158.8" y="1517.488" class="combo">Caps</text>
 <path d="M198.0,1514.24 l-16.507977883183436,-21.13021169047475"/>
 <path d="M198.0,1514.24 l16.50797788318348,21.13021169047494"/>
 <rect rx="6.0" ry="6.0" x="184.0" y="1501.24" width="28.0" height="26.0" class="combo"/>
@@ -472,6 +513,14 @@ path {
 <path d="M254.0,1526.0 l15.690494058248145,17.887163226402926"/>
 <rect rx="6.0" ry="6.0" x="240.0" y="1513.0" width="28.0" height="26.0" class="combo"/>
 <text x="254.0" y="1526.0" class="combo">WhDn</text>
+<path d="M158.8,1517.488 l-28.004469116063856,-13.582167521291009"/>
+<path d="M158.8,1517.488 l50.40446911606384,24.446167521291038"/>
+<rect rx="6.0" ry="6.0" x="144.8" y="1504.488" width="28.0" height="26.0" class="combo"/>
+<text x="158.8" y="1517.488" class="combo">Caps</text>
+<path d="M573.2,1517.488 l28.004469116063806,-13.582167521291002"/>
+<path d="M573.2,1517.488 l-50.40446911606389,24.446167521291045"/>
+<rect rx="6.0" ry="6.0" x="559.2" y="1504.488" width="28.0" height="26.0" class="combo"/>
+<text x="573.2" y="1517.488" class="combo">Apps</text>
 <path d="M478.0,1526.0 l15.690494058248095,-17.88716322640274"/>
 <path d="M478.0,1526.0 l-15.690494058248145,17.887163226402926"/>
 <rect rx="6.0" ry="6.0" x="464.0" y="1513.0" width="28.0" height="26.0" class="combo"/>
@@ -480,10 +529,6 @@ path {
 <path d="M534.0,1514.24 l-16.50797788318348,21.13021169047494"/>
 <rect rx="6.0" ry="6.0" x="520.0" y="1501.24" width="28.0" height="26.0" class="combo"/>
 <text x="534.0" y="1514.24" class="combo">)</text>
-<path d="M573.2,1517.488 l28.004469116063806,-13.582167521291002"/>
-<path d="M573.2,1517.488 l-50.40446911606389,24.446167521291045"/>
-<rect rx="6.0" ry="6.0" x="559.2" y="1504.488" width="28.0" height="26.0" class="combo"/>
-<text x="573.2" y="1517.488" class="combo">Apps</text>
 <path d="M646.0,1541.1200000000001 l10.550706495684175,-4.009268468360024"/>
 <path d="M646.0,1541.1200000000001 l-10.550706495684175,4.009268468360024"/>
 <rect rx="6.0" ry="6.0" x="632.0" y="1528.1200000000001" width="28.0" height="26.0" class="combo"/>
