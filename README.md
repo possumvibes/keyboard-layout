@@ -48,14 +48,26 @@ This layer has three kinds of mods on it! First, sticky inverted-T mods, for use
 
 ## Num
 ![Number layer visualization](./assets/num_layer.svg)
-### Keys
-### Features
+TODO: highlight the cancel keys
+
+### Caps Word For Numbers????
+The primary access switch for this layer is a smart toggle! Num-mode toggles on the layer and toggles it off after certain characters, like space. This allows me to type numbers without having to hold a layer for variable length. If I'm writing `That cost 10 bucks`, I'll tap `That cost <NUMMODE>10 bucks`, and the layer automatically turns off after the space. `j`, `k`, and `G` are for vim movements (go 10 lines up/down) and exit the layer, `v` and `x` are for things like `v4` and `2x4` and continue it. 
+
+The OS Num combo for the layer is a simple oneshot/sticky layer, for occasions when I need to write a single number within a larger alphanumeric word and won't have a NumModeexit case after it: `(b^2 -4ac)/2a`.
+
+The PANIC combo (and when I remember it exists, the PANIC key) is my "clear all mods and features, return to base" combo. It's the panic button, hence the name. It's very handy for fixing number typos!
 
 <br/>
 
 ## Sym
 ![Symbol layer visualization](./assets/sym_layer.svg)
 ### Keys
+The bulk of my combos are symbols, and so my actual sym layer is very light, pretty much just `= + | &` and macros for C# or Markdown.
+
+This layer has been one of the biggest issues for my hands/wrists. Sym is a high-traffic layer for a software engineer, and I found that pretty much no matter how I had the layer arranged, the number of times I'd have to hit my layer access, whatever it was, would create joint strain and exacerbate my RSI. My biggest gamechanger was getting parenthesis and brackets onto base, and from there, it became a process of identifying when a key on the layer was uncomfortable, figuring out a combo for it, rinse and repeat.
+
+The non-bracket symbols are placed by how frequently I use them in prose, code, or vim ()
+
 ### Features
 
 
@@ -117,7 +129,7 @@ The combo visuals will say more than I can (and the combos can be read in full i
 ### Code Influences (alphabetically and non-comprehensively)
 - Callum's [QMK userspace](https://github.com/qmk/qmk_firmware/tree/master/users/callum) - Oneshots, swappers
 - Drashna's [QMK userspace](https://github.com/qmk/qmk_firmware/tree/master/users/drashna) - Wrappers, layout override functions, and a whole lot more
-- Jonas H's [T34 layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/) - Numword
+- Jonas H's [T-34 layout](https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/) - Numword
 - Manna-Harbour's [Miryoku layout](https://github.com/manna-harbour/miryoku) - The actual starting point of this layout, many iterations ago
 - Patrick Getreuer's [QMK articles](https://getreuer.info/posts/keyboards/index.html) (aka How I Learned To Stop Worrying And Love Arrays)
 - and a whole bunch of discord servers for some hella cool alpha layouts, keymap ideas, and different ways of approaching layout balance at the layer and layout levels. Particular shoutout to the Absolem Club and QMK servers!
