@@ -1,41 +1,41 @@
 # Possumvibes 34-ish key layout
 layout: {qmk_keyboard: ferris/sweep, qmk_layout: LAYOUT_split_3x5_2}
 layers:
-  Base:
+  base:
   - [W, G, { t: D, h: Gui }, F, B,  Q, L, { t: U, h: Gui }, O, Y]
   - [R, { t: S, h: Alt }, { t: T, h: Ctl }, { t: H, h: Sft }, K]
   - [J, { t: N, h: Sft }, { t: E, h: Ctl }, { t: A, h: Alt }, I]
   - [X, C, M, P, V ]
   - ['', { t: "'", h: '"' }, { t: ",", h: '!' }, { t: '.', h: '?' }, '' ]
   - [Nav, { t: Shift, h: sticky }, '', Space]
-  Nav:
+  nav:
   - ['', Back, Gui, Fwd, GCtl,  GCtl, Home,  ↑,   End,   '']
   - ['', Alt, Ctl, Sft, '',   F5,   ←, ↓, →, Clr Mod]
   - ['', '',  F12, 2xCtl, '',   { t: Gui, h: lock }, { t: Sft, h: lock }, { t: Ctl, h: lock }, { t: Alt, h: lock },  '']
-  - [{ t: Nav, type: held}, Shift, '', Space]
-  Num:
+  - [{ t: nav, type: held}, Shift, '', Space]
+  num:
   - [W, 7,8,9,'%',  '=', '+', '', PANIC, '']
   - [V, 4,5,6,$,  G,j,k, ':', '']
   - [X, 1,2,3,'', '','','','','',]
   - [Nav, 0,      '', Space]
-  Sym:
+  sym:
   - ['', '', 'Gui', '', '',  'md Code', '=', '|',  '<>', '']
   - ['', 'Alt', 'Ctl', 'Sft', '']
   - ['=>', '+',  '&',  'md Link', '']
   - ['','', Alt, '', '',     '', '^', ');', 'get; set;', '']
   - [Nav, Shift,  Shift, Space]
-  Func:
+  func:
   - [Alt, Wksp 9, Last Wksp, Last Node, Wksp 0,  F5, F6, F7, F8, Gui]
   - [Ctl, Wksp 1, Wksp 2, Wksp 3, Wksp 4]
   - [F9, F11, F10, F6, Ctl]
   - ['',  Wksp 5, Wksp 6, Wksp 7, Wksp 8,        F1, F2, F3, F4, '']
   - [Nav, Shift,  Shift, Space]
-  Macro:
+  macro:
   - ['', v1, v2, v3, '',  '', w, yiw, yaw, '']
   - ['','','vim aw', 'vim iw','',      '', y, 'vim iw', 'vim aw', '']
   - ['','','','','',      '', '', '', '', '']
   - [Nav, Shift,  Shift, Space]
-  System:
+  system:
   - ['','','','','',                 Boot, '', Kill, '', '']
   - [QWERTY, APT v3, '', '', '',     IsWin, qmk com- pile, com- ment, 'vim quit!', '' ]
   - ['','','','','',                 '', qmk flash, uncom- ment, 'vim save- quit', '']
@@ -50,92 +50,92 @@ combos:
 
   ## DISPLAY UNIT: Layer Combos (to and from!)
   # *---- THUMBS ----*/
-  - { p: [30, 31],   k: Sys,      l: [System], a: bottom, o: -.1 }
-  - { p: [33, 32],   k: Macr,     l: [Macro], a: bottom, o: -.1 }
+  - { p: [30, 31],   k: Sys,      l: [system], a: bottom, o: -.1 }
+  - { p: [33, 32],   k: Macr,     l: [macro], a: bottom, o: -.1 }
 
-  - { p: [31, 11],   k: Sym,      l: [Sym],   a: bottom, slide: -1, o: -.2 }
-  - { p: [31, 12],   k: Macr,     l: [Macro], a: bottom, slide: -1, o: -.2 }
-  - { p: [31, 13],   k: Func,     l: [Func],  a: right, o: -.1, slide: -.5 }
-  - { p: [32, 16],   k: Func,     l: [Func],  a: left, o: -.1, slide: .5 }
-  - { p: [32, 17],   k: Num OS,   l: [Num],   a: bottom, slide: 1, o: -.5 }
-  - { p: [32, 18],   k: Num Mode, l: [Num],   a: bottom, slide: 1, o: -.2 }
+  - { p: [31, 11],   k: Sym,      l: [sym],   a: bottom, slide: -1, o: -.2 }
+  - { p: [31, 12],   k: Macr,     l: [macro], a: bottom, slide: -1, o: -.2 }
+  - { p: [31, 13],   k: Func,     l: [func],  a: right, o: -.1, slide: -.5 }
+  - { p: [32, 16],   k: Func,     l: [func],  a: left, o: -.1, slide: .5 }
+  - { p: [32, 17],   k: Num OS,   l: [num],   a: bottom, slide: 1, o: -.5 }
+  - { p: [32, 18],   k: Num Mode, l: [num],   a: bottom, slide: 1, o: -.2 }
 
   # *---- CROSS-HAND ----*/
-  - { p: [12, 17],   k: PA- NIC, l: [System], a: bottom, o: 1.6 }
-  # - { p: [12, 17],   k: PA- NIC, l: [Base],  a: top, o: 1.5 }
+  - { p: [12, 17],   k: PA- NIC, l: [system], a: bottom, o: 1.6 }
+  # - { p: [12, 17],   k: PA- NIC, l: [base],  a: top, o: 1.5 }
 
   #/*---- TOP ROW HORIZONTAL----*/
-  - { p: [1, 3],    k: Esc,   l: [Nav], a: top, o: .2 }
-  - { p: [1, 2],    k: Z,     l: [Base] }
-  - { p: [2, 3],    k: Save,  l: [Macro] }
-  - { p: [3, 4],    k: '~',   l: [Sym] }
+  - { p: [1, 3],    k: Esc,   l: [nav], a: top, o: .2 }
+  - { p: [1, 2],    k: Z,     l: [base] }
+  - { p: [2, 3],    k: Save,  l: [macro] }
+  - { p: [3, 4],    k: '~',   l: [sym] }
 
-  - { p: [5, 6],     k: Undo,  l: [Macro] }
-  - { p: [6, 7],     k: Tab,   l: [Nav], a: top, o: -.1 }
-  - { p: [6, 8],     k: '"',   l: [Sym], a: top, o: .1, slide: .4 }
+  - { p: [5, 6],     k: Undo,  l: [macro] }
+  - { p: [6, 7],     k: Tab,   l: [nav], a: top, o: -.1 }
+  - { p: [6, 8],     k: '"',   l: [sym], a: top, o: .1, slide: .4 }
 
   #/*---- HOME ROW HORIZONTAL----*/
-  - { p: [11, 13],   k: Cut,   l: [System], a: top, o: .3 }
-  - { p: [11, 12],   k: Copy,  l: [System] }
-  - { p: [13, 14],   k: Paste, l: [System] }
+  - { p: [11, 13],   k: Cut,   l: [system], a: top, o: .3 }
+  - { p: [11, 12],   k: Copy,  l: [system] }
+  - { p: [13, 14],   k: Paste, l: [system] }
 
-  - { p: [15, 16],   k: '^',   l: [Sym] }
-  - { p: [16, 17],   k: ':',   l: [Sym] }
-  - { p: [16, 18],   k: ';',   l: [Base], a: top, o: -.05, slide: .45  }
+  - { p: [15, 16],   k: '^',   l: [sym] }
+  - { p: [16, 17],   k: ':',   l: [sym] }
+  - { p: [16, 18],   k: ';',   l: [base], a: top, o: -.05, slide: .45  }
 
   #/*---- BOTTOM ROW HORIZONTAL----*/
-  - { p: [21, 22],   k: 'Q',  l: [Base] }
-  - { p: [22, 23],   k: '*',  l: [Sym] }
-  - { p: [21, 23],   k: Ent,  l: [Nav], a: bottom, o: -.1 }
+  - { p: [21, 22],   k: 'Q',  l: [base] }
+  - { p: [22, 23],   k: '*',  l: [sym] }
+  - { p: [21, 23],   k: Ent,  l: [nav], a: bottom, o: -.1 }
 
-  - { p: [26, 28],   k: '_',  l: [Sym], a: bottom, o: -.1  }
-  - { p: [26, 27],   k: '-',  l: [Sym] }
-  - { p: [27, 28],   k: Bspc, l: [Nav] }
+  - { p: [26, 28],   k: '_',  l: [sym], a: bottom, o: -.1  }
+  - { p: [26, 27],   k: '-',  l: [sym] }
+  - { p: [27, 28],   k: Bspc, l: [nav] }
 
   #/*---- TOP ROW FULL HAND ----*/
-  - { p: [1, 2, 3],     k: Qu,        l: [Base], a: top }
-  - { p: [6, 7, 8],     k: vim yi,    l: [Macro], a: top }
+  - { p: [1, 2, 3],     k: Qu,        l: [base], a: top }
+  - { p: [6, 7, 8],     k: vim yi,    l: [macro], a: top }
   
   #/*---- BOTTOM ROW FULL HAND ----*/
-  - { p: [21, 22, 23],   k: '[]',      l: [Num],   a: bottom, o: -.1 }
-  - { p: [26, 27, 28],  k: Caps Word,  l: [Macro], a: bottom, o: -.1 }
+  - { p: [21, 22, 23],   k: '[]',      l: [num],   a: bottom, o: -.1 }
+  - { p: [26, 27, 28],  k: Caps Word,  l: [macro], a: bottom, o: -.1 }
 
   # * --- TOP-HOME VERTICALS --- */
-  - { p: [11, 1],   k: '@',   l: [Sym] }
-  - { p: [13, 3],   k: '%',   l: [Sym] }
-  - { p: [14, 4],   k: '>',   l: [Num] }
+  - { p: [11, 1],   k: '@',   l: [sym] }
+  - { p: [13, 3],   k: '%',   l: [sym] }
+  - { p: [14, 4],   k: '>',   l: [num] }
 
-  - { p: [15, 5],   k: '<',   l: [Num] }
-  - { p: [16, 6],   k: '$',   l: [Sym] }
-  - { p: [18, 8],   k: '&',   l: [Sym] }
+  - { p: [15, 5],   k: '<',   l: [num] }
+  - { p: [16, 6],   k: '$',   l: [sym] }
+  - { p: [18, 8],   k: '&',   l: [sym] }
 
   # * --- HOME-BOTTOM VERTICALS --- */
-  - { p: [11, 21],   k: '`',    l: [Sym] }
-  - { p: [12, 22],   k: L Clck, l: [Nav], a: right, o: -.9 }
-  - { p: [13, 23],   k: R Clck, l: [Nav], a: right, o: -.9}
-  - { p: [14, 24],   k: C-w,    l: [Nav], a: left, o: -.9 }
+  - { p: [11, 21],   k: '`',    l: [sym] }
+  - { p: [12, 22],   k: L Clck, l: [nav], a: right, o: -.9 }
+  - { p: [13, 23],   k: R Clck, l: [nav], a: right, o: -.9}
+  - { p: [14, 24],   k: C-w,    l: [nav], a: left, o: -.9 }
 
-  - { p: [16, 26],   k: '#',  l: [Sym] }
-  - { p: [17, 27],   k: '/',  l: [Sym] }
-  - { p: [18, 28],   k: '\',  l: [Sym] }
+  - { p: [16, 26],   k: '#',  l: [sym] }
+  - { p: [17, 27],   k: '/',  l: [sym] }
+  - { p: [18, 28],   k: '\',  l: [sym] }
 
   ## DIAGONALS ALL GO TOGETHER.
   # *---- TOP-HOME ADJACENT DIAGONALS ----*/
-  - { p: [0, 11],   k: Ctl,   l: [Nav], d: True}
-  - { p: [2, 13],   k: '[',   l: [Num], d: True}
-  - { p: [3, 14],   k: WhUp,  l: [Nav], d: True}
+  - { p: [0, 11],   k: Ctl,   l: [nav], d: True}
+  - { p: [2, 13],   k: '[',   l: [num], d: True}
+  - { p: [3, 14],   k: WhUp,  l: [nav], d: True}
 
-  - { p: [6, 15],   k: PgUp,  l: [Nav], d: True }
-  - { p: [7, 16],   k: ']',   l: [Num], d: True }
-  - { p: [9, 18],   k: Del,   l: [Nav], d: True }
+  - { p: [6, 15],   k: PgUp,  l: [nav], d: True }
+  - { p: [7, 16],   k: ']',   l: [num], d: True }
+  - { p: [9, 18],   k: Del,   l: [nav], d: True }
 
   # *---- HOME-BOTTOM ADJACENT DIAGONALS ----*/
-  - { p: [12, 23],  k: '(',   l: [Num], d: True }
-  - { p: [13, 24],  k: WhDn,  l: [Nav], d: True}
+  - { p: [12, 23],  k: '(',   l: [num], d: True }
+  - { p: [13, 24],  k: WhDn,  l: [nav], d: True}
 
-  - { p: [11, 23],  k: Caps,  l: [Macro], slide: .1 }
-  - { p: [18, 26],  k: Apps,  l: [Macro], slide: .1 }
+  - { p: [11, 23],  k: Caps,  l: [macro], slide: .1 }
+  - { p: [18, 26],  k: Apps,  l: [macro], slide: .1 }
 
-  - { p: [16, 25],  k: PgDn,  l: [Nav], d: True }
-  - { p: [17, 26],  k: ')',   l: [Num], d: True }
-  - { p: [19, 28],  k: Del,   l: [Nav], d: True }
+  - { p: [16, 25],  k: PgDn,  l: [nav], d: True }
+  - { p: [17, 26],  k: ')',   l: [num], d: True }
+  - { p: [19, 28],  k: Del,   l: [nav], d: True }
