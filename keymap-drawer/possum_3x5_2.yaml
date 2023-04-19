@@ -5,7 +5,8 @@ layers:
   - [W, G, { t: D, h: Gui }, F, B,  Q, L, { t: U, h: Gui }, O, Y]
   - [R, { t: S, h: Alt }, { t: T, h: Ctl }, { t: H, h: Sft }, K]
   - [J, { t: N, h: Sft }, { t: E, h: Ctl }, { t: A, h: Alt }, I]
-  - [X, C, M, P, V,  '', "'", ",", ., '' ]
+  - [X, C, M, P, V ]
+  - ['', { t: "'", h: '"' }, { t: ",", h: '!' }, { t: '.', h: '?' }, '' ]
   - [Nav, { t: Shift, h: sticky }, '', Space]
   Nav:
   - ['', Back, Gui, Fwd, GCtl,  GCtl, Home,  ↑,   End,   '']

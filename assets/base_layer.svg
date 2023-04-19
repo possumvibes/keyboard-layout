@@ -134,10 +134,13 @@ path {
 <rect rx="6.0" ry="6.0" x="424.0" y="193.51999999999998" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="480.0" y="185.67999999999998" width="52.0" height="52.0" class=""/>
 <text x="506.0" y="211.67999999999998" class="tap">&#x27;</text>
+<text x="506.0" y="235.67999999999998" class="hold">&quot;</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="170.0" width="52.0" height="52.0" class=""/>
 <text x="562.0" y="196.0" class="tap">,</text>
+<text x="562.0" y="220.0" class="hold">!</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="187.36" width="52.0" height="52.0" class=""/>
 <text x="618.0" y="213.36" class="tap">.</text>
+<text x="618.0" y="237.36" class="hold">?</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="222.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="228.0" y="268.0" width="52.0" height="52.0" class=""/>
 <text x="254.0" y="294.0" class="tap">Nav</text>
