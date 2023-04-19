@@ -40,7 +40,7 @@ I use inverted-T mods (home-row mods, but make it WASD instead of HJKL) for fast
 <br/>
 
 ## Nav
-todo: image.
+![Nav layer visualization](./assets/nav_layer.svg)
 
 ### Keys
 Nav is accessed via home thumb layer tap, and the layer handles as little as possible to reduce the amount of thumb-holds. There's very little outside the scope of arrows, navigation keys, and mods--F5 is both refresh and my debugging "continue" key; F12 is the Visual Studio "Go to definition/go to implementation" key, and just about everything else is mods.
