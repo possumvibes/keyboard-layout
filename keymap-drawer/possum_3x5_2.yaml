@@ -6,12 +6,12 @@ layers:
   - [R, { t: S, h: Alt }, { t: T, h: Ctl }, { t: H, h: Sft }, K]
   - [J, { t: N, h: Sft }, { t: E, h: Ctl }, { t: A, h: Alt }, I]
   - [X, C, M, P, V,  '', "'", ",", ., '' ]
-  - [Nav, { t: Shift, h: sticky }, { t: Macro, h: sticky }, Space]
+  - [Nav, { t: Shift, h: sticky }, '', Space]
   Nav:
   - ['', Back, Gui, Fwd, GCtl,  GCtl, Home, Up,   End,   '']
   - ['', Alt, Ctl, Sft, '',   F5,   Left, Down, Right, Clear]
   - ['', '',  F12, 2xCtl, '',   { t: Gui, h: lock }, { t: LSft, h: lock }, { t: LCtl, h: lock }, { t: LAlt, h: lock },  '']
-  - [{ t: Nav, type: held}, Shift, Macro, Space]
+  - [{ t: Nav, type: held}, Shift, '', Space]
   Combos-Adjacent:
   - ['','','','','','','','','','']
   - ['','','','','','','','','','']
@@ -31,7 +31,7 @@ layers:
   - [W, 7,8,9,'%',  '=', '+', '', PANIC, '']
   - [V, 4,5,6,$,  G,j,k, ':', '']
   - [X, 1,2,3,'', '','','','','',]
-  - [Nav, 0,      Macro, Space]
+  - [Nav, 0,      '', Space]
   Sym:
   - ['', '', 'Gui', '', '',  'md Code', '=', '|',  '<>', '']
   - ['', 'Alt', 'Ctl', 'Sft', '']
