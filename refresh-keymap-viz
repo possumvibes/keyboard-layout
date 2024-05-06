@@ -8,13 +8,14 @@ set -e
 
 keymap_yaml="./keymap-drawer/possum_3x5_2.yaml"
 
-# Generate base-only svg
-keymap draw -s Base -- $keymap_yaml >assets/base_layer.svg
-
 # Regenerate the full alpha layout
-keymap draw -s Base Nav Num Sym Macro Func System -- $keymap_yaml >assets/layers-only.svg
+keymap draw -- $keymap_yaml >assets/possum_3x5_2.svg
 
-# Regenerate the combos
-# Commented 4/13/23 --current keymap-drawer release is behind main and does not have slide formatting
-keymap draw -s Adjacent Vertical "Diagonal Mostly" Layers -- $keymap_yaml >assets/combos-only.svg
-echo images updated successfully.
+# Generate layer-only svgs
+keymap draw -s base -- $keymap_yaml >assets/base_layer.svg
+keymap draw -s nav -- $keymap_yaml >assets/nav_layer.svg
+keymap draw -s num -- $keymap_yaml >assets/num_layer.svg
+keymap draw -s sym -- $keymap_yaml >assets/sym_layer.svg
+keymap draw -s func -- $keymap_yaml >assets/func_layer.svg
+keymap draw -s macro -- $keymap_yaml >assets/macro_layer.svg
+keymap draw -s system -- $keymap_yaml >assets/system_layer.svg
