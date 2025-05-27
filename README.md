@@ -1,4 +1,4 @@
-# the possumvibes keymap
+# the possumvibes keymap: Archived, and now available [on Codeberg](https://codeberg.org/possumvibes/keyboard-layout).
 
 Here exists a visualization and explanation of ~~what the hell is happening on my keymap~~ my combo-first, 31-ish key layout!
 
